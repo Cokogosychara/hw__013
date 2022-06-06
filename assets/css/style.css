@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(147, 150, 149);
+    font-family: sans-serif;
+}
+.section{
+    /* выставил секцию по центру задал размер */
+    width: 390px;
+    margin: auto;
+}
+.list{
+    /* задал внутрение отступ цвет и закругления краям */
+    padding: 20px;
+    background-color: rgb(232, 237, 235);
+    border-radius: 3px;
+}
+h1,
+p{
+    /* обращение ко всем заголовкам и пораграфам */
+    text-align: center;
+}
+h1{
+    /* заголовок */
+    color: rgb(84, 77, 77);
+    font-size: 2em;
+    position: relative;
+}
+div>p{
+    /* обращение к пораграфам которые находяться в нутри дива */
+    font-size: 14px;
+}
+
+.one-line{
+    /* задаю заголовку и параграфу что бы они были в одну строку */
+    max-width: 400px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.text-style{
+    /* задал тексту цвет  */
+    color: #878e95;
+}
+.left-right-line-header:before {
+    /* полоски по бокам спизжено */
+    content: "";
+    border-bottom: 1px solid rgb(153, 157, 157);
+    width: 28%;
+    height: 0.5em;
+    position: absolute;
+    top: 0px;
+    margin-left: calc(-28% - 10px);
+}
+.left-right-line-header:after {
+    content: "";
+    border-bottom: 1px solid  rgb(153, 157, 157);
+    width: 28%;
+    height: 0.5em;
+    position: absolute;
+    top: 0px;
+    margin-left: 10px;
+}
+.form-flex{
+    /* задал флекс блок форме для правильной и красивой расстановке блоков которые будут в нутри нее */
+    height: 360px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+} 
+.form-flex input{
+    /* обращение ко всем импутам которые находяться в нури блока from */
+    padding: 10px;
+   
+}
+.form-flex input:focus{
+    /* бурал стандартные стили при наведении на поле */
+    outline: none; 
+}
+.field-name{
+    /* обращение к первым 2 полям которые находяться в блоке label */
+    display: flex;
+    justify-content: space-between;
+}
+span>a{
+    /* обращение к сылкам которые находяться в спане запись о там что открывать в новом окне в html */
+    color: rgb(6, 184, 50);
+    text-decoration: none;
+ }
+.button{
+    /* кнопка */
+    font-weight: bold;
+    font-size: 1em;
+    color: aliceblue;
+    background-color: rgb(62, 200, 62);
+    border: none;
+    border-radius: 2px;
+}
+div+p{
+    /* первый сосед дива */
+    color: rgb(255, 255, 255);
+}
+a{  
+    /* последняя ссылка */
+    color: rgb(255, 255, 255);
+}
+::placeholder{
+    /* с помощью свойства задаю цвет подсказкам которые в нутри поля ввода */
+    color: #878e95;  
+}
+
+
